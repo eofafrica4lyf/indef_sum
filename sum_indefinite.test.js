@@ -10,4 +10,8 @@ test('Valid Array is passed',()=>{
 
 test('One or more parameters are invalid',()=>{
     expect(indefinite_sum([1,null,undefined])).toBe('Wrong input');
-})
+});
+
+test('One or more parameter(s) is NaN',()=>{
+    expect(indefinite_sum([NaN,2,4,5,5])).toBe('kjdfnkd');
+});
