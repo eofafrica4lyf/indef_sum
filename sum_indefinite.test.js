@@ -13,11 +13,11 @@ test('One or more parameters are invalid',()=>{
 });
 
 test('One or more parameter(s) is NaN',()=>{
-    expect(indefinite_sum([NaN,2,4,5,5])).toBe('kjdfnkd');
+    expect(indefinite_sum([NaN,2,4,5,5])).toBe('Wrong input');
 });
 
 test('One or more parameter(s) is Infinity',()=>{
-    expect(indefinite_sum([Infinity,2,4,5,5])).toBe('ksdflskf');
+    expect(indefinite_sum([Infinity,2,4,5,5])).toBe('Wrong input');
 });
 
 test('Rounding Floats',()=>{
