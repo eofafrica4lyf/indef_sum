@@ -8,6 +8,9 @@ function sum_indefinite(arr){
             if(isNaN(arr[i])){
                 return 'kjdfnkd';
             }
+            if(arr[i] == Infinity){
+                return 'ksdflskf'
+            }
             result += arr[i];
         }
         return result;

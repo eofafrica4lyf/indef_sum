@@ -15,3 +15,11 @@ test('One or more parameters are invalid',()=>{
 test('One or more parameter(s) is NaN',()=>{
     expect(indefinite_sum([NaN,2,4,5,5])).toBe('kjdfnkd');
 });
+
+test('One or more parameter(s) is Infinity',()=>{
+    expect(indefinite_sum([Infinity,2,4,5,5])).toBe('ksdflskf');
+});
+
+test('Rounding Floats',()=>{
+    expect(indefinite_sum([0.1,0.2])).toBeCloseTo(0.3);
+})
