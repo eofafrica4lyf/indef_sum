@@ -20,6 +20,10 @@ test('One or more parameter(s) is Infinity',()=>{
     expect(indefinite_sum([Infinity,2,4,5,5])).toBe('Wrong input');
 });
 
+test('One or more parameter(s) is Infinity',()=>{
+    expect(indefinite_sum([-Infinity,2,4,5,5])).toBe('Wrong input');
+});
+
 test('Rounding Floats',()=>{
     expect(indefinite_sum([0.1,0.2])).toBeCloseTo(0.3);
 })
